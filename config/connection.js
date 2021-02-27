@@ -1,4 +1,3 @@
-const { connect } = require("http2");
 const mysql = require("mysql");
 
 const connection = mysql.createConnection({
@@ -8,3 +7,13 @@ const connection = mysql.createConnection({
     password: "password",
     database: "burger_db"
 });
+
+connection.connect((err) => {
+    if (err) {
+        console.error(`Error connecting: ${err.stack}`);
+        return;
+    };
+    console.log(`Connection as id ${connection.threadId}`);
+});
+
+module.exports = connection;
