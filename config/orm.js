@@ -9,11 +9,16 @@ const orm = {
             cb(result);
         })
     },
-    insertOne: () => {
-        let query = ""
+    insertOne: (tableName, burgerName, burgerVal) => {
+        let query = "INSERT INTO ? (?) VALUES ?"
+
+        connection.query(query, [tableName, burgerName, burgerVal], (err, result) => {
+            if(err) throw err;
+            cb(result);
+        })
     },
     updateOne: () => {
-
+        let query = ""
     }
 }
 
