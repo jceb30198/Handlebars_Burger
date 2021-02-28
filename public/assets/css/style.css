@@ -1,0 +1,54 @@
+body {
+    background-color: darkcyan;
+    color: white;
+}
+
+h1 {
+    color: gold;
+    text-align: center;
+    text-shadow: darkgoldenrod 3px 3px;
+}    
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+li {
+    font-size: 22px;
+}
+
+
+#hungry {
+    color: lawngreen;
+    text-shadow: darkgreen 2px 2px;
+}
+
+#devoured {
+    color: red;
+    text-shadow: darkred 2px 2px;
+}
+
+#create {
+    color: burlywood;
+    text-shadow: brown 2px 2px;
+}
+
+.border {
+    border: solid goldenrod 2px;
+    box-shadow: darkgoldenrod 3px 3px;
+}
+
+.row form {
+    display: block;
+    background-color: darkslategrey;
+    border: burlywood 3px solid;
+    box-shadow: darkgoldenrod 3px 3px;
+}
