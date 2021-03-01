@@ -11,8 +11,8 @@ const burger = {
             cb(results);
         })
     },
-    update: function(burgerId, cb) {
-        orm.updateOne("burgers", burgerId, function(results) {
+    update: function(id, cb) {
+        orm.updateOne("burgers", id, function(results) {
             cb(results);
         })
     }

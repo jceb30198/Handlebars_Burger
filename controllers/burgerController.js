@@ -8,20 +8,24 @@ router.get("/", (req, res) => {
         const burgerObj = {
             burgers: data
         }
+        console.log(burgerObj);
         res.render("index", burgerObj);
     });
 });
 
 router.post("/api/burgers", (req, res) => {
-    let body = req.body.burger_name
+    const body = req.body.burger_name
+    console.log(body);
     burger.insert(body, (data) => {
         res.json(data) 
     });
 });
 
 router.put("api/burgers/:id", (req, res) => {
-    let id = req.params.id;
+    const id = req.params.id;
+    console.log(id);
     burger.update(id, (data) => {
+        console.log(id);
         if(data.changedRows === 0) {
             return res.status(404).end();
         }
