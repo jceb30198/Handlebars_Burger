@@ -10,7 +10,7 @@ const orm = {
         })
     },
     insertOne: (tableName, burgerName, burgerVal, cb) => {
-        let query = "INSERT INTO ? (?) VALUES ?";
+        let query = "INSERT INTO ? (?) VALUES (?)";
 
         connection.query(query, [tableName, burgerName, burgerVal], (err, result) => {
             if(err) throw err;

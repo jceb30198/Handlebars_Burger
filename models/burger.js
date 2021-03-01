@@ -8,7 +8,7 @@ const burger = {
     },
     insert: function(nameCol, value, cb) {
         orm.insertOne("burgers", nameCol, value, function(results) {
-            cb(resuls);
+            cb(results);
         })
     },
     update: function(burgerId, cb) {
