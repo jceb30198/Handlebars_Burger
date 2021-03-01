@@ -18,7 +18,7 @@ const orm = {
         })
     },
     updateOne: (tableName, burgerId, cb) => {
-        let query = `UPDATE ${tableName} SET devoured = 1 WHERE id = ${burgerId}`;
+        let query = `UPDATE ${tableName} SET devoured = true WHERE id = ${burgerId}`;
 
         connection.query(query, [tableName, burgerId], (err, result) => {
             if(err) throw err;

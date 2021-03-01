@@ -3,12 +3,10 @@ $(document).ready(function() {
     const createBtn = $("#create-button");
 
     eatBtn.click(function(event) {
-        const nameEaten = $(this).data("name");
         const eatenId = $(this).data("id");
-        console.log(`${nameEaten} with ID: ${eatenId} was just enjoyed!`);
 
         let justEaten = {
-            id: eatenId
+            id: eatenId,
         }
 
         $.ajax(`/api/burgers/${eatenId}`, {
