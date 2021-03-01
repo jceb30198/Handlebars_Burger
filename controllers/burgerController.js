@@ -1,3 +1,4 @@
+const { request } = require("express");
 const express = require("express");
 const burger = require("../models/burger");
 
@@ -14,7 +15,11 @@ router.get("/", (req, res) => {
 });
 
 router.post("/api/burgers", (req, res) => {
-    burger.insert()
+    console.log(req.body);
+})
+
+router.put("api/burger/:id", (req, res) => {
+
 })
 
 module.exports = router;
