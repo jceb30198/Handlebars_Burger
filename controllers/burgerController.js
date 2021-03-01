@@ -5,11 +5,11 @@ const router = express.Router();
 
 router.get("/", (req, res) => {
     burger.all((data) => {
-        const hbsObject = {
+        const burgerObj = {
             burgers: data
         }
-        console.log(hbsObject)
-        res.render("index", hbsObject);
+        console.log(burgerObj)
+        res.render("index", burgerObj);
     });
 });
 
