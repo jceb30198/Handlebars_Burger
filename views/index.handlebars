@@ -8,8 +8,9 @@
         <h2 id="hungry">Hungry?</h2>
         <ul class="border green">
             {{#each burgers}}
-            {{#unless devoured}}
-            {{/unless}}
+                {{#unless devoured}}
+                    {{> hungry-block devoured=false}}
+                {{/unless}}
             {{/each}}
         </ul>
     </div>
@@ -18,8 +19,9 @@
         <h2 id="devoured">Devoured!</h2>
         <ul class="border red">
             {{#each burgers}}
-            {{#if devoured}}
-            {{/if}}
+                {{#if devoured}}
+                    {{> devoured-block devoured=true}}
+                {{/if}}
             {{/each}}
         </ul>
     </div>
