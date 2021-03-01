@@ -2,17 +2,17 @@ const connection = require("./connection");
 
 const orm = {
     selectAll: (tableName, cb) => {
-        let query = "SELECT * FROM ?";
+        let query = "SELECT * FROM burgers";
 
         connection.query(query, [tableName], (err, result) => {
             if(err) throw err;
             cb(result);
         })
     },
-    insertOne: (tableName, burgerName, burgerVal, cb) => {
+    insertOne: (tableName, burgerName, cb) => {
         let query = "INSERT INTO ? (?) VALUES (?)";
 
-        connection.query(query, [tableName, burgerName, burgerVal], (err, result) => {
+        connection.query(query, [tableName, burgerName], (err, result) => {
             if(err) throw err;
             cb(result);
         })
