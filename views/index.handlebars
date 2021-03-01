@@ -7,14 +7,20 @@
     <div class="col s6">
         <h2 id="hungry">Hungry?</h2>
         <ul class="border green">
-            
+            {{#each burgers}}
+            {{#unless devoured}}
+            {{/unless}}
+            {{/each}}
         </ul>
     </div>
 
     <div class="col s6">
         <h2 id="devoured">Devoured!</h2>
         <ul class="border red">
-            
+            {{#each burgers}}
+            {{#if devoured}}
+            {{/if}}
+            {{/each}}
         </ul>
     </div>
 
