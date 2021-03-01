@@ -13,4 +13,8 @@ router.get("/", (req, res) => {
     });
 });
 
+router.post("/api/burgers", (req, res) => {
+    burger.insert()
+})
+
 module.exports = router;
