@@ -15,13 +15,15 @@ router.get("/", (req, res) => {
 
 router.post("/api/burgers", (req, res) => {
     const body = req.body.burger_name
-    console.log(body);
+    console.log(req.body);
     burger.insert(body, (data) => {
         res.json(data) 
     });
 });
 
 router.put("api/burgers/:id", (req, res) => {
+    console.log(req.body);
+
     const id = req.params.id;
     console.log(id);
     burger.update(id, (data) => {

@@ -8,7 +8,7 @@ $(document).ready(function() {
         console.log(`${nameEaten} with ID: ${eatenId} was just enjoyed!`);
 
         let justEaten = {
-            devoured: eatenId
+            id: eatenId
         }
 
         $.ajax(`/api/burgers/${eatenId}`, {
@@ -21,17 +21,18 @@ $(document).ready(function() {
     });
 
     createBtn.click(function(event) {
-        event.preventDefault();
-
         const createBurger = {
-            burgerName: $(".burgerInput").val()
+            burger_name: $(".burgerInput").val()
         }
+
+        event.preventDefault();
 
         $.ajax("/api/burgers", {
             type: "POST",
             data: createBurger
         }).then(function(){
             console.log(createBurger);
+            location.reload();
         })
     });
 })
