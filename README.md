@@ -4,7 +4,7 @@
 - [Description](#description)
 - [Features](#features)
 - [Technology Used](#technology-used)
-- [Future Features](#future-features)
+- [Goals](#goals)
 - [Authors](#authors)
 
 ## Description
@@ -34,8 +34,8 @@ This web application allows for input of a new burger, that will then go into th
 - Node.js
 - Express.js
 
-## Future Features
-- Allow the user to edit the body and subject of previously made notes.
+## Goals
+The main goal of this project was to learn more about the express-handlebars template engine along with object-relational mapping using JavaScript and SQL.
 
 ## Authors
 - Jack Ceballos
