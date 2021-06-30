@@ -33,6 +33,7 @@ This web application allows for input of a new burger, that will then go into th
 - jQuery
 - Node.js
 - Express.js
+- Express-Handlebars
 
 ## Goals
 The main goal of this project was to learn more about the express-handlebars template engine along with object-relational mapping (ORM) using JavaScript and SQL. These goals were accomplished though I do want to work more with a SQL and JavaScript ORM in order to better understand them together.
