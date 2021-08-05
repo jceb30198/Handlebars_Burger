@@ -8,7 +8,7 @@
 - [Authors](#authors)
 
 ## Description
-This web application allows for input of a new burger, that will then go into the "Hungry?" column and once the "Eat!" button is clicked the burger is then placed inside of the "Devoured!" column. The application uses express for the routing and express-handlebars which is a template engine for express that calls for the use of handlebars templating language. Handlebars is used to make the HTML layout of the application. SQL is used to insert, update, and get the data, then it goes through an object-relational mapping (ORM) tool made with node so that the data can be used for the layouts.
+This web application allows for input of a new burger, that will then go into the "Hungry?" column and once the "Eat!" button is clicked the burger is then placed inside of the "Devoured!" column. This is an attempt at learning the Model View Controller pattern. The application uses express for the routing and express-handlebars which is a template engine for express that calls for the use of handlebars templating language. Handlebars is used to make the HTML layout of the application. SQL is used to insert, update, and get the data, then it goes through an object-relational mapping (ORM) tool made with node so that the data can be used for the layouts.
 
 ## Features and Layout
 - Eat-Da-Burger landing page shows two columns one named "Hungry?" the other named "Devoured!"
