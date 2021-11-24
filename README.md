@@ -29,6 +29,7 @@ This web application allows for input of a new burger, that will then go into th
 - Materialize
 - Google Fonts
 - JavaScript
+- SQL
 - jQuery
 - Node.js
 - Express.js
